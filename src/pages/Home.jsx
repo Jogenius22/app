@@ -11,7 +11,7 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 
 const configuration = new Configuration({
-  apiKey: process.env.API_KEY,
+  apiKey: "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"
 });
 
 const openai = new OpenAIApi(configuration);
