@@ -11,7 +11,7 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 
 const configuration = new Configuration({
-  apiKey: process.env.REACT_APP_API_KEY
+  apiKey: process.env.VITE_REACT_APP_API_KEY
 });
 
 
