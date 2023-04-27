@@ -7,8 +7,7 @@ import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 
 const configuration = new Configuration({
