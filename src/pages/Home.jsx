@@ -3,7 +3,7 @@ import "./home.css";
 import Bot from "../assets/bot.svg";
 import User from "../assets/user.svg";
 import Logo from "../assets/Logo.png";
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -11,8 +11,9 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 
 const configuration = new Configuration({
-  apiKey: "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"
+  apiKey: process.env.REACT_APP_API_KEY
 });
+
 
 const openai = new OpenAIApi(configuration);
 
